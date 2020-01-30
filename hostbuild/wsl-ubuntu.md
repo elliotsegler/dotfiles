@@ -16,5 +16,7 @@ brew --version
 ```
 brew tap aws/tap
 brew install aws-sam-cli
+test -r ~/.bash_profile && echo "export SAM_CLI_TELEMETRY=0" >>~/.bash_profile
+echo "export SAM_CLI_TELEMETRY=0" >>~/.profile
 sam --version
 ```
