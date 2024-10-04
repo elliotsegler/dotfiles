@@ -141,3 +141,6 @@ export PATH="$PATH:${HOME}/Library/Python/3.8/bin"
 
 # Set this to allow GPG Signing to work
 export GPG_TTY=$(tty)
+
+# Python autoenv
+test $(brew --prefix autoenv) && source $(brew --prefix autoenv)/activate.sh
